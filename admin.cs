@@ -12,10 +12,10 @@ namespace LoginProgram
 
             while (attemptsLeft > 0)
             {
-                Console.Write("Enter your username: ");
+                Console.Write("Enter your username here: ");
                 string username = Console.ReadLine();
 
-                Console.Write("Enter your password: ");
+                Console.Write("Enter your password here: ");
                 string password = Console.ReadLine();
 
                 if (username == correctUsername && password == correctPassword)
