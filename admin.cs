@@ -1,6 +1,6 @@
 using System;
 
-namespace hayup
+namespace admin
 {
     class Program
     {
@@ -32,7 +32,7 @@ namespace hayup
 
                 if (attemptsLeft == 0)
                 {
-                    Console.WriteLine("Out of attempts. Please try again later.");
+                    Console.WriteLine("Out of attempts.");
                 }
             }
         }
