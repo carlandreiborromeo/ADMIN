@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace LoginProgram
+namespace hayup
 {
     class Program
     {
@@ -12,15 +12,15 @@ namespace LoginProgram
 
             while (attemptsLeft > 0)
             {
-                Console.Write("Enter your username here: ");
-                string username = Console.ReadLine();
+                Console.WriteLine("Enter username:");
+                string usernameInput = Console.ReadLine();
 
-                Console.Write("Enter your password here: ");
-                string password = Console.ReadLine();
+                Console.WriteLine("Enter password:");
+                string passwordInput = Console.ReadLine();
 
-                if (username == correctUsername && password == correctPassword)
+                if (usernameInput == correctUsername && passwordInput == correctPassword)
                 {
-                    Console.WriteLine("Login successful!");
+                    Console.WriteLine("Login successful");
                     break;
                 }
                 else
@@ -29,14 +29,13 @@ namespace LoginProgram
                     attemptsLeft--;
                     Console.WriteLine($"Attempts left: {attemptsLeft}");
                 }
-            }
 
-            if (attemptsLeft == 0)
-            {
-                Console.WriteLine("You have exceeded the maximum number of attempts. Please try again later.");
+                if (attemptsLeft == 0)
+                {
+                    Console.WriteLine("Out of attempts. Please try again later.");
+                }
             }
-
-            Console.ReadLine(); 
         }
     }
 }
+
